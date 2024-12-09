@@ -1,0 +1,11 @@
+.card-title {
+    font-weight: bold; /* Título em negrito */
+}
+
+footer {
+    background-color: #f8f9fa; /* Cor de fundo personalizada para o rodapé */
+}
+
+main{
+    min-width: 100vh;
+}

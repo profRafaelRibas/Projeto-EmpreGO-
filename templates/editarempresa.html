@@ -1,0 +1,27 @@
+<h1>EmpreGO!</h1>
+<h2>Editar Empresa</h2>
+<p>Menu:
+    <a href="/admin">Voltar</a>
+</p>
+<hr>
+
+<h2>Editar dados da Empresa</h2>
+<form action="/editarempresa/{{ empresa[0] }}" method="post">
+    <label for="nome_empresa">Nome da empresa (Fantasia)</label><br>
+    <input type="text" name="nome_empresa" value="{{ empresa[1] }}" required><br><br>
+
+    <label for="cnpj">CNPJ</label><br>
+    <input type="text" name="cnpj" value="{{ empresa[2] }}" required><br><br>
+
+    <label for="telefone">Telefone</label><br>
+    <input type="text" name="telefone" value="{{ empresa[3] }}" required><br><br>
+
+    <label for="email">E-mail (Será utilizado para o acesso)</label><br>
+    <input type="email" name="email" value="{{ empresa[4] }}" required><br><br>
+
+    <label for="senha">Senha de acesso</label>
+    <input type="text" name="senha" value="{{ empresa[5] }}"><br><br>
+
+    <button type="submit">Alterar</button>
+
+</form>
